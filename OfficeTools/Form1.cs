@@ -146,14 +146,14 @@ namespace OfficeTools
                 //this.ShowInTaskbar = false;
                 this.Visible = false;
                 this.notifyIcon.Visible = true;
-                this.notifyIcon.ShowBalloonTip(2, "提示", "点击图标恢复", ToolTipIcon.Info);
+                this.notifyIcon.ShowBalloonTip(1, "提示", "点击图标恢复", ToolTipIcon.Info);
             }
             
         }
 
         private void Click_Update(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("");
+            System.Diagnostics.Process.Start("https://github.com/shtahal/OfficeTools");
         }
     }
 }
